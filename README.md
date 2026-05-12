@@ -1,8 +1,12 @@
-# API Sentinel — Lightweight API Testing Application
+# API Sentinel — Desktop API Testing, Mock Server, Load Testing, and Real-Time API Client
+
+![Latest Release](https://img.shields.io/github/v/release/Sanjeevsky/api-sentinel-downloads?display_name=tag&style=flat-square)
+![Total Downloads](https://img.shields.io/github/downloads/Sanjeevsky/api-sentinel-downloads/total?style=flat-square)
+![Latest Release Downloads](https://img.shields.io/github/downloads/Sanjeevsky/api-sentinel-downloads/latest/total?style=flat-square)
 
 API Sentinel is a developer-focused desktop API client for REST API testing, request history, collections, environments, and local-first workflows. This repository is the public download and product page for API Sentinel. It does not contain application source code.
 
-If you are searching for a high-performance desktop API client for API testing, this repository is where you can read about the product and download the latest installers from GitHub Releases.
+If you are searching for an API testing tool, HTTP client, REST client, GraphQL client, mock server, load testing tool, or desktop API client for local-first development workflows, this repository is where you can read about the product and download the latest installers from GitHub Releases.
 
 ## Start Here
 
@@ -26,15 +30,15 @@ Fast path for new users:
 - All releases: [View release history](https://github.com/Sanjeevsky/api-sentinel-downloads/releases)
 - Current public release: `v0.0.1`
 
-Each release will include platform installers such as:
+Each release can include platform installers such as:
 
 - Windows: `.exe` for `x64`
-- macOS: `.dmg` for Intel and Apple Silicon
+- macOS: `.dmg` for Apple Silicon (`arm64`) and Intel (`x64`) when available
 - Linux: `.AppImage` for `x64` and `arm64`
 
 ## Why API Sentinel
 
-API Sentinel is built for developers who want a fast API client without unnecessary friction. It is designed for local-first use, API exploration, request replay, environment-based testing, and day-to-day REST workflows.
+API Sentinel is built for developers who want a fast API client without unnecessary friction. It is designed for local-first API exploration, request replay, environment-based testing, mock-driven development, API automation, load testing, and day-to-day REST workflows.
 
 Core positioning keywords, used honestly:
 
@@ -43,8 +47,14 @@ Core positioning keywords, used honestly:
 - API testing tool
 - HTTP client
 - desktop API client
+- GraphQL client
+- mock server
+- load testing tool
+- WebSocket client
+- API documentation tool
+- local-first developer tools
 
-Note: API Sentinel is not open source. The source code remains private. This public repository exists for downloads, documentation, release notes, and trust material.
+API Sentinel is proprietary software. The source code remains private. This public repository exists for downloads, documentation, release notes, and trust material.
 
 ## Installation
 
@@ -59,10 +69,11 @@ Note: API Sentinel is not open source. The source code remains private. This pub
 ### macOS (`.dmg`)
 
 1. Open the [latest release page](https://github.com/Sanjeevsky/api-sentinel-downloads/releases/latest).
-2. Download the macOS installer file ending in `.dmg`.
+2. Download the macOS installer file ending in `.dmg` for your Mac architecture.
 3. Open the disk image and drag API Sentinel into `Applications`.
-4. On first launch, macOS may ask you to confirm opening an app downloaded from the internet.
+4. If Gatekeeper warns on first launch, use `Open` from the context menu or approve the app in `System Settings` -> `Privacy & Security`.
 5. Launch API Sentinel from `Applications`.
+6. Signed and notarized macOS releases remain the long-term target for the smoothest install experience.
 
 ### Linux (`.AppImage`)
 
@@ -114,13 +125,30 @@ chmod +x API-Sentinel.AppImage
 
 For the complete feature map, see [docs/FEATURES.md](./docs/FEATURES.md).
 
+## Capability Summary
+
+| Capability | API Sentinel |
+| --- | --- |
+| REST and HTTP request testing | Yes |
+| GraphQL request support | Yes |
+| Collections and environments | Yes |
+| Request history and templates | Yes |
+| Snapshot and compare workflows | Yes |
+| Mock server | Yes |
+| Load testing | Yes |
+| Security testing helpers | Yes |
+| WebSocket, SSE, Socket.IO, MQTT | Yes |
+| Local-first desktop workflow | Yes |
+
 ## Use Cases
 
 API Sentinel is a strong fit for:
 
 - Backend developers testing REST endpoints during implementation
 - QA engineers running repeatable API testing flows
+- Teams looking for a local-first API testing workspace
 - Developers who want a focused HTTP client without a large cloud-first workflow
+- Engineers who need mock server, GraphQL, real-time protocol, and load testing workflows in one desktop app
 - Anyone who wants a local-first API client for daily request/response work
 
 ## Quick Navigation Guide
@@ -173,7 +201,7 @@ No. This public repository is a download and release page only. The application 
 
 ### What kind of API client is API Sentinel?
 
-It is a desktop API client and HTTP client focused on local-first API testing workflows.
+It is a desktop API client and HTTP client focused on local-first API testing workflows, mock server usage, load testing, and protocol-specific debugging.
 
 ### Where do I download the installers?
 
@@ -189,6 +217,7 @@ Planned public-facing improvements:
 
 - Add screenshots and walkthrough documentation
 - Publish checksum files for every release
+- Expand FAQ with workflow-specific onboarding for API testing, mock server use, load testing, and real-time protocol debugging
 - Add feature overview pages under `docs/`
 - Add release badges and version history improvements
 
@@ -215,7 +244,7 @@ Build API Sentinel from the private source repository on the appropriate platfor
 
 Use a release title in this format:
 
-`API Sentinel v1.0.0 — Modern API Testing Tool`
+`API Sentinel v0.0.1 — Initial Public Release`
 
 ### 3. Upload release assets
 
@@ -257,6 +286,12 @@ Recommended GitHub topics:
 - http-client
 - desktop-app
 - developer-tools
+- mock-server
+- load-testing
+- graphql-client
+- websocket-client
+- sse
+- mqtt
 
 ## Support
 
