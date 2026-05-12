@@ -1,8 +1,8 @@
-# API Sentinel — Lightweight Postman Alternative for API Testing
+# API Sentinel — Lightweight API Testing Application
 
 API Sentinel is a developer-focused desktop API client for REST API testing, request history, collections, environments, and local-first workflows. This repository is the public download and product page for API Sentinel. It does not contain application source code.
 
-If you are searching for a Postman alternative, Insomnia alternative, Thunder Client alternative, or a desktop API client for API testing, this repository is where you can read about the product and download the latest installers from GitHub Releases.
+If you are searching for a high-performance desktop API client for API testing, this repository is where you can read about the product and download the latest installers from GitHub Releases.
 
 ## Start Here
 
@@ -38,16 +38,13 @@ API Sentinel is built for developers who want a fast API client without unnecess
 
 Core positioning keywords, used honestly:
 
-- Postman alternative
 - API client
 - REST client
 - API testing tool
 - HTTP client
-- Insomnia alternative
-- Thunder Client alternative
 - desktop API client
 
-Note: if you are specifically looking for an open source Postman alternative, API Sentinel is not open source. The source code remains private. This public repository exists for downloads, documentation, release notes, and trust material.
+Note: API Sentinel is not open source. The source code remains private. This public repository exists for downloads, documentation, release notes, and trust material.
 
 ## Installation
 
@@ -117,27 +114,13 @@ chmod +x API-Sentinel.AppImage
 
 For the complete feature map, see [docs/FEATURES.md](./docs/FEATURES.md).
 
-## Comparison
-
-| Capability | API Sentinel | Postman | Insomnia | Thunder Client |
-| --- | --- | --- | --- | --- |
-| Desktop API client workflow | Yes | Yes | Yes | Limited to editor extension workflow |
-| REST API testing | Yes | Yes | Yes | Yes |
-| Collections | Yes | Yes | Yes | Yes |
-| Environments | Yes | Yes | Yes | Yes |
-| Local-first workflow | Yes | Mixed by plan and workflow | Mixed | Mostly editor-local |
-| Forced login to get started | No | Often part of broader workflow | Varies | No |
-| Public source code in this repo | No | No | No | No |
-
 ## Use Cases
 
 API Sentinel is a strong fit for:
 
 - Backend developers testing REST endpoints during implementation
 - QA engineers running repeatable API testing flows
-- Teams looking for a lightweight Postman alternative
 - Developers who want a focused HTTP client without a large cloud-first workflow
-- Engineers evaluating an Insomnia alternative or Thunder Client alternative for desktop use
 - Anyone who wants a local-first API client for daily request/response work
 
 ## Quick Navigation Guide
@@ -284,23 +267,3 @@ Recommended GitHub topics:
 ## License
 
 API Sentinel is proprietary software. Review [LICENSE](./LICENSE) before downloading or using the application.
- postman-alternative
-- api-client
-- rest-client
-- api-testing
-- http-client
-- desktop-app
-- developer-tools
-- insomnia-alternative
-- thunder-client-alternative
-
-## Support
-
-- Bugs and feedback: open an issue in this repository
-- Security issues: see [SECURITY.md](./SECURITY.md)
-- Release notes: see [CHANGELOG.md](./CHANGELOG.md)
-
-## License
-
-API Sentinel is proprietary software. Review [LICENSE](./LICENSE) before downloading or using the application.
-. Review [LICENSE](./LICENSE) before downloading or using the application.
