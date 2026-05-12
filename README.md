@@ -1,12 +1,22 @@
+<p align="center">
+  <img src="./docs/screenshots/app-logo.png" alt="API Sentinel logo" width="132" />
+</p>
+
 # API Sentinel — Desktop API Testing, Mock Server, Load Testing, and Real-Time API Client
 
 ![Latest Release](https://img.shields.io/github/v/release/Sanjeevsky/api-sentinel-downloads?display_name=tag&style=flat-square)
 ![Total Downloads](https://img.shields.io/github/downloads/Sanjeevsky/api-sentinel-downloads/total?style=flat-square)
 ![Latest Release Downloads](https://img.shields.io/github/downloads/Sanjeevsky/api-sentinel-downloads/latest/total?style=flat-square)
 
-API Sentinel is a developer-focused desktop API client for REST API testing, request history, collections, environments, and local-first workflows. This repository is the public download and product page for API Sentinel. It does not contain application source code.
+API Sentinel is a developer-focused desktop API client for REST API testing, GraphQL requests, collections, environments, request history, mock server workflows, load testing, security checks, and real-time protocol debugging. This repository is the public download and product page for API Sentinel. It does not contain application source code.
 
-If you are searching for an API testing tool, HTTP client, REST client, GraphQL client, mock server, load testing tool, or desktop API client for local-first development workflows, this repository is where you can read about the product and download the latest installers from GitHub Releases.
+If you are searching for an API testing tool, HTTP client, REST client, GraphQL client, mock server, load testing tool, WebSocket client, or desktop API client for local-first development workflows, this repository is where you can read about the product and download the latest installers from GitHub Releases.
+
+## Product Tour
+
+The fastest way to understand the product surface is to watch the app move through the main workflow: organize requests, send a call, inspect the response, and jump into advanced tooling without leaving the workspace.
+
+![API Sentinel animated product tour](./docs/screenshots/api-sentinel-demo.gif)
 
 ## Start Here
 
@@ -121,6 +131,7 @@ chmod +x API-Sentinel.AppImage
 - API documentation helpers and proxy capture
 - WebSocket, SSE, Socket.IO, and MQTT composers
 - Vault, certificates, and cookie management
+- Interactive guided tours and inline feature education
 - AI assistant and command palette for faster navigation
 
 For the complete feature map, see [docs/FEATURES.md](./docs/FEATURES.md).
@@ -171,18 +182,37 @@ Use this when you want to get to the right area quickly:
 
 ## Screenshots
 
-Add product screenshots to:
+### Main Workspace
 
-- `docs/screenshots/`
+Full request and response workspace for API testing, timing, headers, cookies, JSON inspection, and local history.
 
-Suggested files to add later:
+![API Sentinel main workspace for API testing and response inspection](./docs/screenshots/main-window.png)
 
-- `main-window.png`
-- `request-composer.png`
-- `response-viewer.png`
-- `collections-and-environments.png`
+### Collections and Environments
 
-After adding real screenshots, link them here in the README to improve trust, usability, and search visibility.
+Collections, saved requests, and active environments stay visible so teams can move quickly between local, QA, and production-style workflows.
+
+![API Sentinel collections and environments view](./docs/screenshots/collections-and-environments.png)
+
+### Request Composer
+
+The request composer supports direct cURL import, structured params and headers, auth strategies, body editors, scripts, and code generation.
+
+![API Sentinel request composer with URL import and environment-aware request editing](./docs/screenshots/request-composer.png)
+
+### Response Explorer
+
+Responses can be inspected as formatted JSON, searched, diffed, snapshot-tested, and reviewed with timing and header context.
+
+![API Sentinel response viewer with formatted JSON and response analysis tabs](./docs/screenshots/response-viewer.png)
+
+### Mock Server and Guided Onboarding
+
+API Sentinel includes local mock routes for deterministic frontend and QA work, plus a built-in guided tour so new users can discover the full product without guesswork.
+
+![API Sentinel mock server routes and local endpoint simulation](./docs/screenshots/mock-server.png)
+
+![API Sentinel interactive onboarding and guided tours](./docs/screenshots/guided-tour.png)
 
 ## Security and Trust
 
@@ -215,18 +245,17 @@ No. This repository is intentionally limited to release assets, documentation, c
 
 Planned public-facing improvements:
 
-- Add screenshots and walkthrough documentation
 - Publish checksum files for every release
 - Expand FAQ with workflow-specific onboarding for API testing, mock server use, load testing, and real-time protocol debugging
-- Add feature overview pages under `docs/`
-- Add release badges and version history improvements
+- Add deeper workflow walkthroughs and release media for major features
+- Add richer release badges and version history improvements
 
 Planned product-level improvements:
 
 - Expanded API testing workflows
 - Improved request collaboration and environment management
 - Additional import/export and migration tooling
-- Better onboarding for teams evaluating a new REST client
+- Signed and notarized installer improvements across platforms
 
 ## Release Instructions
 
