@@ -115,10 +115,8 @@ Supported import/export paths include:
 
 - cURL
 - OpenAPI
-- Postman
-- Insomnia
-- Bruno
 - HAR
+- Common API client formats
 - REST Client style inputs
 
 ## Execution and Automation

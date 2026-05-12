@@ -12,7 +12,7 @@ API Sentinel is designed for developers who want a local-first API client for:
 - response inspection
 - repeatable request workflows
 
-If you are coming from Postman, Insomnia, Thunder Client, or another HTTP client, the easiest way to begin is to send one request, save it, add an environment, and then explore the response and automation features from there.
+If you are coming from another HTTP client, the easiest way to begin is to send one request, save it, add an environment, and then explore the response and automation features from there.
 
 ## First Run Path
 

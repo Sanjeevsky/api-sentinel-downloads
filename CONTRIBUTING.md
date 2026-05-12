@@ -39,4 +39,4 @@ Use the process in [SECURITY.md](./SECURITY.md) instead.
 
 ## Feature Requests
 
-If you are evaluating API Sentinel as a Postman alternative, API client, REST client, or API testing tool, feature requests that explain your workflow are especially helpful. Concrete examples make prioritization easier.
+If you are evaluating API Sentinel as an API client, REST client, or API testing tool, feature requests that explain your workflow are especially helpful. Concrete examples make prioritization easier.

@@ -188,14 +188,6 @@ After adding real screenshots, link them here in the README to improve trust, us
 
 No. This public repository is a download and release page only. The application source code remains private.
 
-### Is API Sentinel a Postman alternative?
-
-Yes. API Sentinel is positioned as a lightweight Postman alternative for API testing, REST workflows, collections, environments, and local request history.
-
-### Is this an open source Postman alternative?
-
-No. If you need an open source Postman alternative, you should evaluate projects with publicly available source code. API Sentinel is a proprietary desktop API client.
-
 ### What kind of API client is API Sentinel?
 
 It is a desktop API client and HTTP client focused on local-first API testing workflows.
@@ -214,7 +206,6 @@ Planned public-facing improvements:
 
 - Add screenshots and walkthrough documentation
 - Publish checksum files for every release
-- Expand FAQ with migration guidance for users moving from Postman, Insomnia, or Thunder Client
 - Add feature overview pages under `docs/`
 - Add release badges and version history improvements
 
@@ -241,7 +232,7 @@ Build API Sentinel from the private source repository on the appropriate platfor
 
 Use a release title in this format:
 
-`API Sentinel v1.0.0 — Postman Alternative for API Testing`
+`API Sentinel v1.0.0 — Modern API Testing Tool`
 
 ### 3. Upload release assets
 
@@ -277,7 +268,23 @@ Add the resulting hashes to the release notes so users can verify downloads.
 
 Recommended GitHub topics:
 
-- postman-alternative
+- api-client
+- rest-client
+- api-testing
+- http-client
+- desktop-app
+- developer-tools
+
+## Support
+
+- Bugs and feedback: open an issue in this repository
+- Security issues: see [SECURITY.md](./SECURITY.md)
+- Release notes: see [CHANGELOG.md](./CHANGELOG.md)
+
+## License
+
+API Sentinel is proprietary software. Review [LICENSE](./LICENSE) before downloading or using the application.
+ postman-alternative
 - api-client
 - rest-client
 - api-testing
@@ -296,3 +303,4 @@ Recommended GitHub topics:
 ## License
 
 API Sentinel is proprietary software. Review [LICENSE](./LICENSE) before downloading or using the application.
+. Review [LICENSE](./LICENSE) before downloading or using the application.

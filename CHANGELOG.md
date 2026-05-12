@@ -8,7 +8,7 @@ The format is inspired by Keep a Changelog and intended for human-readable relea
 
 ### Added
 
-- First public release of API Sentinel as a lightweight Postman alternative for API testing
+- First public release of API Sentinel as a lightweight API testing application
 - Desktop installer distribution through GitHub Releases
 - Public release assets for Windows x64, macOS Intel and Apple Silicon, and Linux AppImage on x64 and arm64
 - Support for REST API testing workflows
