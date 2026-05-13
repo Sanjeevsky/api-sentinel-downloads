@@ -43,8 +43,20 @@ Fast path for new users:
 Each release can include platform installers such as:
 
 - Windows: `.exe` for `x64`
-- macOS: `.dmg` for Apple Silicon (`arm64`) and Intel (`x64`) when available
-- Linux: `.AppImage` for `x64` and `arm64`
+- macOS Preview: `.dmg` for Intel and Apple Silicon
+- Linux: `.deb` for `x64`
+
+### macOS preview status
+
+Current macOS downloads are preview builds. They are usable for evaluation, but they are not yet notarized by Apple. On first launch, macOS may show a warning that Apple cannot verify the app is free of malware.
+
+If that happens:
+
+1. Move `API Sentinel.app` to `Applications`.
+2. In Finder, right-click the app and choose `Open`.
+3. When macOS blocks it, open `System Settings -> Privacy & Security`.
+4. Find the blocked app message and click `Open Anyway`.
+5. Launch the app again and confirm.
 
 ## Why API Sentinel
 
@@ -81,22 +93,22 @@ API Sentinel is proprietary software. The source code remains private. This publ
 1. Open the [latest release page](https://github.com/Sanjeevsky/api-sentinel-downloads/releases/latest).
 2. Download the macOS installer file ending in `.dmg` for your Mac architecture.
 3. Open the disk image and drag API Sentinel into `Applications`.
-4. If Gatekeeper warns on first launch, use `Open` from the context menu or approve the app in `System Settings` -> `Privacy & Security`.
-5. Launch API Sentinel from `Applications`.
-6. Signed and notarized macOS releases remain the long-term target for the smoothest install experience.
+4. macOS builds are currently marked as **Preview** and may be blocked by Gatekeeper because they are not yet notarized by Apple.
+5. In Finder, right-click `API Sentinel.app` and choose `Open`.
+6. If Apple still blocks the app, go to `System Settings -> Privacy & Security` and click `Open Anyway`.
+7. Launch API Sentinel from `Applications`.
+8. Signed and notarized macOS releases remain the long-term target for the smoothest install experience.
 
-### Linux (`.AppImage`)
+### Linux (`.deb`)
 
 1. Open the [latest release page](https://github.com/Sanjeevsky/api-sentinel-downloads/releases/latest).
-2. Download the `.AppImage` that matches your Linux architecture.
-3. Mark the file executable.
-4. Run it directly.
+2. Download the `.deb` package that matches your Linux architecture.
+3. Install it with your package manager or with `dpkg`.
 
 Example:
 
 ```bash
-chmod +x API-Sentinel.AppImage
-./API-Sentinel.AppImage
+sudo dpkg -i API-Sentinel-0.0.1-amd64.deb
 ```
 
 ## Feature Highlights
@@ -236,6 +248,10 @@ It is a desktop API client and HTTP client focused on local-first API testing wo
 ### Where do I download the installers?
 
 Use the [latest GitHub Release](https://github.com/Sanjeevsky/api-sentinel-downloads/releases/latest) to download the current `.exe` and `.dmg` files.
+
+### Why does macOS say Apple cannot verify the app?
+
+Current macOS builds are preview builds and are not yet notarized by Apple. They can still be opened manually by using `Open` from Finder and approving the app in `System Settings -> Privacy & Security`.
 
 ### Does this repository contain the application source code?
 
