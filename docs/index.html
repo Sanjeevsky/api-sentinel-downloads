@@ -10,3 +10,613 @@
   <meta name="author" content="Sanjeevsky"/>
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"/>
   <link rel="canonical" href="https://sanjeevsky.github.io/api-sentinel-downloads/"/>
+
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://sanjeevsky.github.io/api-sentinel-downloads/"/>
+  <meta property="og:title" content="API Sentinel — Free Local-First Desktop API Client & Postman Alternative"/>
+  <meta property="og:description" content="100% free, local-first desktop API client. REST, GraphQL, mock server, load testing, WebSocket, SSE, MQTT — everything on your machine. No account. No cloud. No subscription."/>
+  <meta property="og:image" content="https://github.com/Sanjeevsky/api-sentinel-downloads/raw/main/docs/screenshots/main-window.png"/>
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+  <meta property="og:site_name" content="API Sentinel"/>
+
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="API Sentinel — Free Local-First Desktop API Client & Postman Alternative"/>
+  <meta name="twitter:description" content="100% free. No account. No cloud sync. REST, GraphQL, mock server, load testing, WebSocket — all local."/>
+  <meta name="twitter:image" content="https://github.com/Sanjeevsky/api-sentinel-downloads/raw/main/docs/screenshots/main-window.png"/>
+
+  <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"SoftwareApplication","name":"API Sentinel","applicationCategory":"DeveloperApplication","operatingSystem":"Windows, macOS, Linux","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"description":"API Sentinel is a free, local-first desktop API client. REST API testing, GraphQL, mock server, load testing, WebSocket, SSE, Socket.IO, MQTT, security scans, collection runner, proxy capture, scheduled runs, chained flows, snapshot regression — all on your machine with no account required.","url":"https://sanjeevsky.github.io/api-sentinel-downloads/","downloadUrl":"https://github.com/Sanjeevsky/api-sentinel-downloads/releases/latest","softwareVersion":"0.0.1","screenshot":"https://github.com/Sanjeevsky/api-sentinel-downloads/raw/main/docs/screenshots/main-window.png","featureList":["REST API testing","GraphQL client","Mock server","Load testing","WebSocket client","SSE client","Socket.IO client","MQTT client","Security testing","Collection runner","Scheduled runs","Chained flows","Proxy capture","Snapshot regression testing","Local-first storage","No account required","No cloud sync"],"author":{"@type":"Person","name":"Sanjeevsky","url":"https://github.com/Sanjeevsky"}}
+  </script>
+
+  <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is API Sentinel completely free?","acceptedAnswer":{"@type":"Answer","text":"Yes. API Sentinel is 100% free. Every feature — REST testing, GraphQL, mock server, load testing, WebSocket, security scans, flows, scheduled runs — is available at no cost. There is no freemium tier, no paid plan, and no feature behind a paywall."}},{"@type":"Question","name":"Does API Sentinel sync data to the cloud?","acceptedAnswer":{"@type":"Answer","text":"No. API Sentinel is local-first. All your requests, collections, environments, history, and snapshots are stored on your machine only. Nothing is sent to any cloud server. No telemetry is enabled by default."}},{"@type":"Question","name":"Do I need an account to use API Sentinel?","acceptedAnswer":{"@type":"Answer","text":"No account is required. Download the installer, launch the app, and start making API requests immediately. There is no sign-up, no email required, and no login screen."}},{"@type":"Question","name":"What platforms does API Sentinel support?","acceptedAnswer":{"@type":"Answer","text":"API Sentinel runs on Windows (x64), macOS (Intel and Apple Silicon), and Linux (x64, .deb)."}},{"@type":"Question","name":"How does API Sentinel compare to Postman?","acceptedAnswer":{"@type":"Answer","text":"API Sentinel offers REST testing, GraphQL, mock server, load testing, WebSocket, SSE, MQTT, security scans, collection runner, flows, and proxy capture — all free. Postman locks mock server, load testing, and advanced features behind paid plans and requires a cloud account. API Sentinel requires no account and stores all data locally."}},{"@type":"Question","name":"Does API Sentinel support WebSocket, SSE, and MQTT?","acceptedAnswer":{"@type":"Answer","text":"Yes. API Sentinel includes dedicated composers for WebSocket, Server-Sent Events (SSE), Socket.IO, and MQTT — all free, all local."}}]}
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Syne:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"/>
+
+  <style>
+    :root{--bg:#07090d;--surface:#0d1117;--surface2:#111820;--border:#1a2130;--border2:#1f2d3d;--text:#c9d1d9;--muted:#6e7f93;--muted2:#3d4f61;--green:#3fb950;--blue:#58a6ff;--purple:#bc8cff;--amber:#d29922;--red:#f85149;--fh:'Syne',sans-serif;--fb:'Inter',sans-serif;--fm:'DM Mono',monospace}
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{background:var(--bg);color:var(--text);font-family:var(--fb);font-size:16px;line-height:1.65;overflow-x:hidden}
+    a{color:var(--blue);text-decoration:none}
+    a:hover{text-decoration:underline}
+    img{max-width:100%;height:auto;display:block}
+    body::before{content:'';position:fixed;inset:0;z-index:0;background-image:linear-gradient(rgba(63,185,80,.022) 1px,transparent 1px),linear-gradient(90deg,rgba(63,185,80,.022) 1px,transparent 1px);background-size:48px 48px;pointer-events:none}
+    .z{position:relative;z-index:1}
+    .wrap{max-width:1100px;margin:0 auto;padding:0 24px}
+
+    /* NAV */
+    nav{position:sticky;top:0;z-index:100;backdrop-filter:blur(24px);background:rgba(7,9,13,.9);border-bottom:1px solid var(--border)}
+    .ni{display:flex;align-items:center;justify-content:space-between;padding:14px 24px;max-width:1100px;margin:0 auto}
+    .logo{display:flex;align-items:center;gap:10px;font-family:var(--fh);font-weight:800;font-size:1.05rem;color:#fff;letter-spacing:-.3px}
+    .nl{display:flex;gap:22px;align-items:center}
+    .nl a{color:var(--muted);font-size:.84rem;font-weight:500;transition:color .15s}
+    .nl a:hover{color:var(--text);text-decoration:none}
+    .ncta{background:var(--green)!important;color:#030d05!important;padding:7px 18px;border-radius:6px;font-weight:700;font-size:.82rem;transition:opacity .2s}
+    .ncta:hover{opacity:.85;text-decoration:none!important}
+
+    /* TRUST BANNER */
+    .tbanner{background:linear-gradient(90deg,rgba(63,185,80,.07),rgba(63,185,80,.03));border-bottom:1px solid rgba(63,185,80,.13);padding:9px 0;text-align:center}
+    .tbanner span{font-family:var(--fm);font-size:.75rem;color:var(--green);letter-spacing:.4px}
+    .tbanner b{color:#fff}
+
+    /* HERO */
+    .hero{padding:100px 0 84px;text-align:center;position:relative;z-index:1}
+    .eyebrow{display:inline-flex;align-items:center;gap:8px;background:rgba(63,185,80,.07);border:1px solid rgba(63,185,80,.16);border-radius:100px;padding:5px 16px;font-family:var(--fm);font-size:.74rem;color:var(--green);margin-bottom:32px;animation:fu .5s ease both}
+    .blink{animation:bl 1.8s infinite}
+    @keyframes bl{0%,100%{opacity:1}50%{opacity:.1}}
+    h1{font-family:var(--fh);font-size:clamp(2.5rem,6vw,4.2rem);font-weight:800;color:#fff;line-height:1.08;letter-spacing:-1.8px;margin-bottom:22px;animation:fu .6s .08s ease both}
+    .gg{color:var(--green)}.gb{color:var(--blue)}
+    .hsub{font-size:1.08rem;color:var(--muted);max-width:640px;margin:0 auto 16px;animation:fu .6s .15s ease both;line-height:1.8}
+    .hpills{font-family:var(--fm);font-size:.75rem;color:var(--muted2);margin-bottom:40px;animation:fu .6s .2s ease both;display:flex;gap:20px;justify-content:center;flex-wrap:wrap}
+    .hpills span{color:var(--green)}
+    .hact{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-bottom:52px;animation:fu .6s .25s ease both}
+    .bdl{background:var(--green);color:#020c04;font-family:var(--fh);font-weight:700;font-size:.95rem;padding:14px 30px;border-radius:8px;box-shadow:0 0 32px rgba(63,185,80,.22);transition:transform .15s,box-shadow .15s}
+    .bdl:hover{transform:translateY(-2px);box-shadow:0 0 48px rgba(63,185,80,.38);text-decoration:none}
+    .bgh{background:transparent;color:var(--text);font-weight:600;font-size:.9rem;padding:14px 26px;border-radius:8px;border:1px solid var(--border2);transition:border-color .2s,color .2s}
+    .bgh:hover{border-color:var(--blue);color:var(--blue);text-decoration:none}
+    .plats{display:flex;gap:20px;justify-content:center;flex-wrap:wrap;font-family:var(--fm);font-size:.74rem;color:var(--muted);animation:fu .6s .3s ease both}
+    .plats span{display:flex;align-items:center;gap:5px}
+    .plats span::before{content:'↓';color:var(--green)}
+    @keyframes fu{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
+
+    /* APP FRAME */
+    .aframe{margin:64px auto 0;max-width:920px;border-radius:12px;border:1px solid var(--border2);overflow:hidden;box-shadow:0 0 0 1px rgba(63,185,80,.05),0 48px 120px rgba(0,0,0,.75);animation:fu .7s .38s ease both}
+    .fbar{background:#111820;padding:10px 16px;display:flex;align-items:center;gap:8px;border-bottom:1px solid var(--border)}
+    .fd{width:12px;height:12px;border-radius:50%}
+    .fd.r{background:#f85149}.fd.y{background:#d29922}.fd.g{background:var(--green)}
+    .furl{flex:1;margin:0 12px;background:var(--bg);border:1px solid var(--border);border-radius:6px;padding:4px 12px;font-family:var(--fm);font-size:.74rem;color:var(--muted);text-align:center}
+    .fbody{background:var(--surface);min-height:380px;display:flex;align-items:center;justify-content:center}
+    .fbody img{width:100%}
+    .ffb{color:var(--muted);font-family:var(--fm);font-size:.82rem;text-align:center;padding:80px 40px}
+    .ffb code{color:var(--green)}
+
+    /* SECTIONS */
+    .sec{padding:88px 0}
+    .lbl{font-family:var(--fm);font-size:.7rem;color:var(--green);letter-spacing:2px;text-transform:uppercase;margin-bottom:10px}
+    h2{font-family:var(--fh);font-size:clamp(1.9rem,4vw,2.7rem);font-weight:800;color:#fff;letter-spacing:-1px;margin-bottom:14px;line-height:1.12}
+    .sub{color:var(--muted);font-size:1rem;max-width:580px;margin-bottom:48px;line-height:1.8}
+
+    /* LOCAL-FIRST BLOCK */
+    .lblock{background:linear-gradient(135deg,rgba(63,185,80,.04) 0%,transparent 60%);border:1px solid rgba(63,185,80,.11);border-radius:16px;padding:60px 52px}
+    .lgrid{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:start}
+    .lpillars{display:flex;flex-direction:column;gap:20px;margin-top:28px}
+    .pillar{display:flex;gap:16px;align-items:flex-start}
+    .pico{width:40px;height:40px;border-radius:10px;background:rgba(63,185,80,.09);border:1px solid rgba(63,185,80,.18);display:flex;align-items:center;justify-content:center;font-size:1.05rem;flex-shrink:0}
+    .ptxt h4{color:#fff;font-weight:700;font-size:.92rem;margin-bottom:4px;font-family:var(--fh)}
+    .ptxt p{color:var(--muted);font-size:.84rem;line-height:1.65}
+    .term{background:#080d12;border:1px solid var(--border2);border-radius:10px;padding:26px;font-family:var(--fm);font-size:.76rem;line-height:2}
+    .tc{color:var(--muted2)}.tk{color:var(--blue)}.tv{color:var(--green)}.ts{color:var(--amber)}.tt{color:var(--green)}.tf{color:var(--red)}
+
+    /* FEATURE TABS */
+    .tnav{display:flex;gap:5px;flex-wrap:wrap;margin-bottom:28px;padding:4px;background:var(--surface);border:1px solid var(--border);border-radius:10px}
+    .tb{padding:9px 16px;border-radius:7px;font-size:.81rem;font-weight:600;color:var(--muted);cursor:pointer;border:none;background:transparent;font-family:var(--fb);transition:all .15s;white-space:nowrap}
+    .tb.on{background:var(--surface2);color:#fff;border:1px solid var(--border2)}
+    .tb:hover:not(.on){color:var(--text)}
+    .tp{display:none}
+    .tp.on{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:16px}
+    .fc{background:var(--surface);border:1px solid var(--border2);border-radius:10px;padding:22px;transition:border-color .2s,transform .2s}
+    .fc:hover{border-color:rgba(63,185,80,.22);transform:translateY(-2px)}
+    .fci{font-size:1.35rem;margin-bottom:12px}
+    .fc h3{font-weight:700;font-size:.9rem;color:#fff;margin-bottom:8px;font-family:var(--fh)}
+    .fc ul{list-style:none;display:flex;flex-direction:column;gap:5px}
+    .fc li{font-size:.81rem;color:var(--muted);display:flex;align-items:baseline;gap:7px}
+    .fc li::before{content:'·';color:var(--green);font-size:1rem;flex-shrink:0}
+
+    /* FREE CHIPS */
+    .chips{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:12px;margin-top:36px}
+    .chip{background:var(--surface);border:1px solid var(--border2);border-radius:8px;padding:13px 16px;display:flex;align-items:center;gap:9px;font-size:.83rem;font-weight:600;color:var(--text);transition:border-color .2s}
+    .chip:hover{border-color:rgba(63,185,80,.28)}
+    .chip::before{content:'✓';color:var(--green);font-weight:800;font-size:.88rem;flex-shrink:0}
+
+    /* COMPARE */
+    .cwrap{overflow-x:auto}
+    table.cmp{width:100%;border-collapse:collapse;border-radius:10px;overflow:hidden;border:1px solid var(--border2)}
+    table.cmp thead tr{background:#111820}
+    table.cmp th{padding:13px 18px;text-align:left;font-size:.78rem;font-weight:700;color:var(--muted);border-bottom:1px solid var(--border2)}
+    table.cmp th.s{color:var(--green)}
+    table.cmp tbody tr{border-bottom:1px solid var(--border);transition:background .15s}
+    table.cmp tbody tr:hover{background:rgba(255,255,255,.013)}
+    table.cmp tbody tr:last-child{border:none}
+    table.cmp td{padding:11px 18px;font-size:.84rem}
+    table.cmp td:first-child{color:var(--muted);font-family:var(--fm);font-size:.76rem}
+    .y{color:var(--green);font-weight:700}.n{color:var(--red)}.p{color:var(--amber)}
+
+    /* DOWNLOAD */
+    .dlbox{background:var(--surface);border:1px solid var(--border2);border-radius:14px;padding:60px 48px;text-align:center;position:relative;overflow:hidden}
+    .dlbox::before{content:'';position:absolute;top:-80px;left:50%;transform:translateX(-50%);width:360px;height:360px;background:radial-gradient(circle,rgba(63,185,80,.06) 0%,transparent 70%);pointer-events:none}
+    .dlbtns{display:flex;gap:13px;justify-content:center;flex-wrap:wrap;margin:36px 0 22px}
+    .dlbtn{display:flex;align-items:center;gap:10px;background:#111820;border:1px solid var(--border2);color:var(--text);font-weight:600;font-size:.87rem;padding:13px 22px;border-radius:8px;transition:border-color .2s,color .2s}
+    .dlbtn:hover{border-color:var(--green);color:var(--green);text-decoration:none}
+    .vn{font-family:var(--fm);font-size:.73rem;color:var(--muted)}
+
+    /* FAQ */
+    .flist{display:flex;flex-direction:column;gap:10px;margin-top:36px}
+    .fi{background:var(--surface);border:1px solid var(--border2);border-radius:10px;overflow:hidden}
+    .fq{padding:17px 22px;font-weight:700;font-size:.9rem;color:#fff;cursor:pointer;display:flex;justify-content:space-between;align-items:center;list-style:none;user-select:none;font-family:var(--fh)}
+    .fq::after{content:'+';color:var(--green);font-size:1.2rem}
+    details[open] .fq::after{content:'−'}
+    .fa{padding:0 22px 17px;color:var(--muted);font-size:.88rem;line-height:1.78}
+    .fa a{color:var(--blue)}
+
+    /* FOOTER */
+    footer{border-top:1px solid var(--border);padding:44px 0;text-align:center;color:var(--muted);font-size:.82rem}
+    .ftl{display:flex;gap:20px;justify-content:center;margin-bottom:14px;flex-wrap:wrap}
+    .ftl a{color:var(--muted)}.ftl a:hover{color:var(--blue)}
+    .ftkw{margin-top:12px;font-size:.7rem;color:var(--muted2);line-height:1.8}
+
+    /* REVEAL */
+    .r{opacity:0;transform:translateY(22px);transition:opacity .55s,transform .55s}
+    .r.on{opacity:1;transform:none}
+
+    @media(max-width:768px){
+      .nl{display:none}
+      .lgrid{grid-template-columns:1fr}
+      .lblock{padding:36px 24px}
+      .dlbox{padding:40px 22px}
+      table.cmp th:nth-child(4),table.cmp td:nth-child(4){display:none}
+    }
+    @media(max-width:480px){
+      h1{letter-spacing:-1px}
+      table.cmp th:nth-child(3),table.cmp td:nth-child(3){display:none}
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="ni">
+    <div class="logo">
+      <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+        <path d="M11 2L20 7V15L11 20L2 15V7L11 2Z" stroke="#3fb950" stroke-width="1.5" fill="rgba(63,185,80,.1)"/>
+        <circle cx="11" cy="11" r="3" fill="#3fb950"/>
+      </svg>
+      API Sentinel
+    </div>
+    <div class="nl">
+      <a href="#local-first">Local-First</a>
+      <a href="#features">Features</a>
+      <a href="#compare">Compare</a>
+      <a href="#download">Download</a>
+      <a href="#faq">FAQ</a>
+      <a href="https://github.com/Sanjeevsky/api-sentinel-downloads" class="ncta">GitHub ↗</a>
+    </div>
+  </div>
+</nav>
+
+<div class="tbanner">
+  <span><b>🔒 100% Local-First</b> &nbsp;·&nbsp; No account &nbsp;·&nbsp; No cloud sync &nbsp;·&nbsp; No telemetry &nbsp;·&nbsp; No subscription &nbsp;·&nbsp; <b>Everything runs on your machine</b></span>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap z">
+    <div class="eyebrow"><span class="blink">●</span>&nbsp;v0.0.1 — Windows · macOS · Linux &nbsp;·&nbsp; Free Forever</div>
+    <h1>The <span class="gg">free, local-first</span><br/>desktop <span class="gb">API client</span><br/>that respects your privacy</h1>
+    <p class="hsub">API Sentinel replaces Postman and Insomnia — completely free, with every feature running locally on your machine. REST testing, GraphQL, mock server, load testing, WebSocket, SSE, MQTT, security scans, flows, proxy capture and more. <strong style="color:#fff">No account. No cloud. No subscription. Ever.</strong></p>
+    <div class="hpills">
+      <span>✓ No sign-up required</span>
+      <span>✓ No data leaves your machine</span>
+      <span>✓ No telemetry by default</span>
+      <span>✓ Works fully offline</span>
+    </div>
+    <div class="hact">
+      <a href="https://github.com/Sanjeevsky/api-sentinel-downloads/releases/latest" class="bdl">↓ Download Free — No Account Needed</a>
+      <a href="https://github.com/Sanjeevsky/api-sentinel-downloads" class="bgh">View on GitHub</a>
+    </div>
+    <div class="plats">
+      <span>Windows x64 (.exe)</span>
+      <span>macOS Intel &amp; Apple Silicon (.dmg)</span>
+      <span>Linux x64 (.deb)</span>
+    </div>
+    <div class="aframe">
+      <div class="fbar">
+        <div class="fd r"></div><div class="fd y"></div><div class="fd g"></div>
+        <div class="furl">API Sentinel — Local API Testing Workspace · No Cloud · No Account</div>
+      </div>
+      <div class="fbody">
+        <img src="./screenshots/main-window.png"
+             alt="API Sentinel main workspace — REST API testing, response inspection, collections and environments — runs fully locally with no cloud sync"
+             onerror="this.parentElement.innerHTML='<div class=\'ffb\'><code>API Sentinel</code><br/><br/>Full API Testing Workspace · 100% Local<br/>REST · GraphQL · Mock Server · Load Testing · WebSocket · SSE · MQTT</div>'"/>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LOCAL-FIRST -->
+<section class="sec" id="local-first">
+  <div class="wrap z">
+    <div class="lblock r">
+      <div class="lgrid">
+        <div>
+          <p class="lbl">Privacy-First Architecture</p>
+          <h2>Your data never<br/>leaves your machine</h2>
+          <p style="color:var(--muted);font-size:.98rem;line-height:1.8;margin-bottom:0">Most API clients push you toward cloud accounts, sync your requests to their servers, and lock features behind subscriptions. API Sentinel works the other way around. Every collection, every environment, every request history snapshot — stored locally, owned by you, accessible offline.</p>
+          <div class="lpillars">
+            <div class="pillar">
+              <div class="pico">🔒</div>
+              <div class="ptxt"><h4>No Account Required</h4><p>Launch the app and start testing immediately. There is no sign-up screen, no email, and no forced login — now or ever.</p></div>
+            </div>
+            <div class="pillar">
+              <div class="pico">📡</div>
+              <div class="ptxt"><h4>Zero Cloud Sync</h4><p>Your requests, collections, environments, and history live on your filesystem only. No data is uploaded to any server.</p></div>
+            </div>
+            <div class="pillar">
+              <div class="pico">🛰</div>
+              <div class="ptxt"><h4>No Telemetry by Default</h4><p>Usage analytics are off by default. API Sentinel does not phone home unless you explicitly enable it.</p></div>
+            </div>
+            <div class="pillar">
+              <div class="pico">✈️</div>
+              <div class="ptxt"><h4>Works Fully Offline</h4><p>No internet connection required to use the app. Ideal for air-gapped environments, restricted networks, and travel.</p></div>
+            </div>
+          </div>
+        </div>
+        <div class="term">
+          <div class="tc">// api-sentinel.config — your machine, your data</div><br/>
+          <div><span class="tk">"storage"</span>: {</div>
+          <div>&nbsp;&nbsp;<span class="tk">"mode"</span>: <span class="ts">"local-filesystem"</span>,</div>
+          <div>&nbsp;&nbsp;<span class="tk">"cloud_sync"</span>: <span class="tf">false</span>,</div>
+          <div>&nbsp;&nbsp;<span class="tk">"data_leaves_machine"</span>: <span class="tf">false</span>,</div>
+          <div>&nbsp;&nbsp;<span class="tk">"works_offline"</span>: <span class="tt">true</span></div>
+          <div>},</div><br/>
+          <div><span class="tk">"auth"</span>: {</div>
+          <div>&nbsp;&nbsp;<span class="tk">"account_required"</span>: <span class="tf">false</span>,</div>
+          <div>&nbsp;&nbsp;<span class="tk">"login_required"</span>: <span class="tf">false</span>,</div>
+          <div>&nbsp;&nbsp;<span class="tk">"email_required"</span>: <span class="tf">false</span></div>
+          <div>},</div><br/>
+          <div><span class="tk">"telemetry"</span>: {</div>
+          <div>&nbsp;&nbsp;<span class="tk">"enabled_by_default"</span>: <span class="tf">false</span>,</div>
+          <div>&nbsp;&nbsp;<span class="tk">"analytics"</span>: <span class="ts">"opt-in only"</span></div>
+          <div>},</div><br/>
+          <div><span class="tk">"pricing"</span>: {</div>
+          <div>&nbsp;&nbsp;<span class="tk">"cost"</span>: <span class="tv">0</span>,</div>
+          <div>&nbsp;&nbsp;<span class="tk">"freemium"</span>: <span class="tf">false</span>,</div>
+          <div>&nbsp;&nbsp;<span class="tk">"all_features_free"</span>: <span class="tt">true</span>,</div>
+          <div>&nbsp;&nbsp;<span class="tk">"subscription_required"</span>: <span class="tf">false</span></div>
+          <div>}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section class="sec" id="features">
+  <div class="wrap z">
+    <p class="lbl r">Complete Feature Set</p>
+    <h2 class="r">Every feature. All free. All local.</h2>
+    <p class="sub r">No feature gates, no paid tiers. Every capability listed below is included in the free download and runs entirely on your machine.</p>
+
+    <div class="tnav r" id="tnav">
+      <button class="tb on" data-t="requests">Request Building</button>
+      <button class="tb" data-t="response">Response &amp; Regression</button>
+      <button class="tb" data-t="organize">Collections &amp; Import</button>
+      <button class="tb" data-t="automation">Automation &amp; Flows</button>
+      <button class="tb" data-t="protocols">All Protocols</button>
+      <button class="tb" data-t="testing">Testing &amp; Security</button>
+      <button class="tb" data-t="workspace">Workspace &amp; Vault</button>
+    </div>
+
+    <div class="tp on" id="tp-requests">
+      <div class="fc"><div class="fci">⚡</div><h3>Request Composer</h3><ul>
+        <li>URL bar with autocomplete</li><li>Direct cURL paste import</li><li>HTTP method selector</li>
+        <li>Query parameter editor</li><li>Header editor with suggestions</li>
+        <li>Auth: Bearer, Basic, API Key, OAuth</li><li>Cookie &amp; variable-aware building</li>
+        <li>Request settings: timeout, redirects, SSL</li>
+      </ul></div>
+      <div class="fc"><div class="fci">📦</div><h3>Body Modes</h3><ul>
+        <li>JSON with pretty-print</li><li>Raw text</li><li>Form-data</li>
+        <li>URL-encoded payloads</li><li>GraphQL query &amp; variable editor</li>
+        <li>Binary &amp; file uploads</li>
+      </ul></div>
+      <div class="fc"><div class="fci">🧪</div><h3>Scripting &amp; Tests</h3><ul>
+        <li>Pre-request scripting</li><li>Test scripting with assertions</li>
+        <li>Console output capture</li><li>Test result summaries</li>
+        <li>Response assertions engine</li>
+      </ul></div>
+      <div class="fc"><div class="fci">🔧</div><h3>Code &amp; Template Helpers</h3><ul>
+        <li>Reusable request templates</li><li>Clone &amp; duplicate flows</li>
+        <li>Code generation from any request</li><li>Snippet-friendly export</li>
+      </ul></div>
+    </div>
+
+    <div class="tp" id="tp-response">
+      <div class="fc"><div class="fci">👁</div><h3>Response Viewer</h3><ul>
+        <li>Pretty body view</li><li>Raw body view</li><li>JSON tree exploration</li>
+        <li>Headers &amp; cookie inspection</li><li>Timing &amp; timeline data</li>
+        <li>Response search</li><li>Download &amp; export</li>
+        <li>Markdown &amp; schema-style views</li>
+      </ul></div>
+      <div class="fc"><div class="fci">📸</div><h3>Snapshot Regression</h3><ul>
+        <li>Save response snapshots locally</li><li>Mark expected baselines</li>
+        <li>Compare current vs saved response</li><li>Compare snapshot vs snapshot</li>
+        <li>Inline pass/fail status</li><li>Catch unintended API drift early</li>
+      </ul></div>
+      <div class="fc"><div class="fci">🔁</div><h3>Diff &amp; Compare</h3><ul>
+        <li>Side-by-side response diff</li><li>Field-level change detection</li>
+        <li>All comparison data stored locally</li>
+      </ul></div>
+    </div>
+
+    <div class="tp" id="tp-organize">
+      <div class="fc"><div class="fci">🗂</div><h3>Collections</h3><ul>
+        <li>Collections with nested folders</li><li>Inline rename</li>
+        <li>Request &amp; collection duplication</li><li>Request templates</li>
+        <li>Parallel request tabs</li>
+      </ul></div>
+      <div class="fc"><div class="fci">🌐</div><h3>Environments &amp; Variables</h3><ul>
+        <li>Multiple environments (local, staging, prod)</li><li>Collection variables</li>
+        <li>Variable toggles &amp; secret-aware handling</li>
+        <li>Dynamic variables</li><li>Global find &amp; replace</li>
+      </ul></div>
+      <div class="fc"><div class="fci">🕰</div><h3>History &amp; Recovery</h3><ul>
+        <li>Full request history</li><li>Time machine inspection</li>
+        <li>Backup &amp; restore workflows</li><li>Stored on your filesystem</li>
+      </ul></div>
+      <div class="fc"><div class="fci">📥</div><h3>Import &amp; Export</h3><ul>
+        <li>cURL import &amp; export</li><li>OpenAPI / Swagger</li>
+        <li>HAR files</li><li>Common API client formats</li>
+        <li>REST Client style inputs</li>
+      </ul></div>
+    </div>
+
+    <div class="tp" id="tp-automation">
+      <div class="fc"><div class="fci">▶️</div><h3>Collection Runner</h3><ul>
+        <li>Execute multiple requests in sequence</li><li>Parameterised test runs</li>
+        <li>Pass/fail reporting per request</li><li>Re-run failed requests</li>
+      </ul></div>
+      <div class="fc"><div class="fci">⏱</div><h3>Scheduled Runs</h3><ul>
+        <li>Recurring local automation</li><li>Time-based collection triggers</li>
+        <li>Results stored locally — no cloud needed</li>
+      </ul></div>
+      <div class="fc"><div class="fci">🔗</div><h3>Flows — Chained Requests</h3><ul>
+        <li>Chain requests using prior responses</li><li>Login → fetch profile</li>
+        <li>Create resource → validate retrieval</li><li>Multi-step smoke tests</li>
+        <li>Visual flow builder</li>
+      </ul></div>
+      <div class="fc"><div class="fci">🕵️</div><h3>Proxy Capture</h3><ul>
+        <li>Intercept real network traffic</li><li>Build requests from captured interactions</li>
+        <li>Debug traffic without code changes</li>
+      </ul></div>
+    </div>
+
+    <div class="tp" id="tp-protocols">
+      <div class="fc"><div class="fci">🌐</div><h3>REST &amp; HTTP</h3><ul>
+        <li>All HTTP methods</li><li>HTTP/1.1 &amp; HTTP/2</li>
+        <li>Custom SSL/TLS certificates</li><li>Redirect control</li>
+      </ul></div>
+      <div class="fc"><div class="fci">◈</div><h3>GraphQL</h3><ul>
+        <li>Schema introspection</li><li>Query editor with syntax highlighting</li>
+        <li>Mutations &amp; subscriptions</li><li>Variable editors</li>
+      </ul></div>
+      <div class="fc"><div class="fci">🔌</div><h3>WebSocket</h3><ul>
+        <li>Full WebSocket composer</li><li>Send &amp; receive messages</li>
+        <li>Connection lifecycle management</li><li>Message history log</li>
+      </ul></div>
+      <div class="fc"><div class="fci">📡</div><h3>SSE · Socket.IO · MQTT</h3><ul>
+        <li>Server-Sent Events (SSE) client</li><li>Socket.IO composer</li>
+        <li>MQTT client with topic subscriptions</li><li>All real-time protocols in one app</li>
+      </ul></div>
+    </div>
+
+    <div class="tp" id="tp-testing">
+      <div class="fc"><div class="fci">🔁</div><h3>Mock Server</h3><ul>
+        <li>Local endpoint simulation</li><li>Define routes, status codes, response bodies</li>
+        <li>Configurable response delays</li><li>Mock-driven frontend dev</li>
+        <li>No external service needed</li>
+      </ul></div>
+      <div class="fc"><div class="fci">📊</div><h3>Load Testing</h3><ul>
+        <li>Concurrent virtual user simulation</li><li>Duration-based &amp; count-based runs</li>
+        <li>Latency &amp; throughput metrics</li><li>Per-request performance breakdown</li>
+        <li>Runs locally — no external service</li>
+      </ul></div>
+      <div class="fc"><div class="fci">🔐</div><h3>Security Testing</h3><ul>
+        <li>Passive security scan helpers</li><li>Engineer-friendly fuzzing passes</li>
+        <li>Common API vulnerability checks</li><li>Runs locally — no data sent externally</li>
+      </ul></div>
+      <div class="fc"><div class="fci">📸</div><h3>Regression Testing</h3><ul>
+        <li>Save response baselines locally</li><li>Compare current output vs baseline</li>
+        <li>Catch unintended API changes early</li><li>All snapshots on your machine</li>
+      </ul></div>
+    </div>
+
+    <div class="tp" id="tp-workspace">
+      <div class="fc"><div class="fci">🔐</div><h3>Vault &amp; Certificates</h3><ul>
+        <li>Local secret vault</li><li>Certificate management</li>
+        <li>Cookie jar management</li><li>All stored on your machine</li>
+      </ul></div>
+      <div class="fc"><div class="fci">🤖</div><h3>AI Assistant</h3><ul>
+        <li>AI-powered request building</li><li>Test script generation</li>
+        <li>Command palette for fast navigation</li><li>Interactive guided tours</li>
+      </ul></div>
+      <div class="fc"><div class="fci">📄</div><h3>API Documentation</h3><ul>
+        <li>Generate docs from collections</li><li>Markdown response rendering</li>
+        <li>Export-ready documentation helpers</li>
+      </ul></div>
+      <div class="fc"><div class="fci">🛡</div><h3>Local Trust Controls</h3><ul>
+        <li>No forced login</li><li>No cloud sync ever</li>
+        <li>Workspace backup &amp; restore</li><li>Works fully offline</li>
+        <li>No telemetry by default</li>
+      </ul></div>
+    </div>
+  </div>
+</section>
+
+<!-- FREE EVERYTHING -->
+<section class="sec" style="padding-top:0">
+  <div class="wrap z r">
+    <p class="lbl">Pricing</p>
+    <h2>100% free. No asterisks.</h2>
+    <p class="sub">Every single capability is included — no freemium, no paid plan, no feature behind a paywall. What you see is what you get, forever.</p>
+    <div class="chips">
+      <div class="chip">REST API Testing</div><div class="chip">GraphQL Client</div>
+      <div class="chip">Mock Server</div><div class="chip">Load Testing</div>
+      <div class="chip">WebSocket Composer</div><div class="chip">SSE Client</div>
+      <div class="chip">Socket.IO Client</div><div class="chip">MQTT Client</div>
+      <div class="chip">Security Testing</div><div class="chip">Collection Runner</div>
+      <div class="chip">Scheduled Runs</div><div class="chip">Chained Flows</div>
+      <div class="chip">Proxy Capture</div><div class="chip">Snapshot Regression</div>
+      <div class="chip">Collections &amp; Environments</div><div class="chip">Pre/Post Request Scripts</div>
+      <div class="chip">cURL Import</div><div class="chip">OpenAPI Import</div>
+      <div class="chip">HAR Import</div><div class="chip">Code Generation</div>
+      <div class="chip">AI Assistant</div><div class="chip">Command Palette</div>
+      <div class="chip">Vault &amp; Certificates</div><div class="chip">API Documentation</div>
+      <div class="chip">Request History</div><div class="chip">Backup &amp; Restore</div>
+      <div class="chip">Cookie Management</div><div class="chip">Dynamic Variables</div>
+    </div>
+  </div>
+</section>
+
+<!-- SCREENSHOTS -->
+<section class="sec" style="padding-top:0">
+  <div class="wrap z">
+    <p class="lbl r">Screenshots</p>
+    <h2 class="r">The full local workspace</h2>
+    <div style="display:grid;gap:20px;grid-template-columns:repeat(auto-fill,minmax(420px,1fr));margin-top:28px">
+      <div class="r" style="border-radius:10px;overflow:hidden;border:1px solid var(--border2)"><img src="./screenshots/request-composer.png" alt="API Sentinel request composer — cURL import, auth, body editors, all local" onerror="this.style.display='none'" loading="lazy"/></div>
+      <div class="r" style="border-radius:10px;overflow:hidden;border:1px solid var(--border2)"><img src="./screenshots/response-viewer.png" alt="API Sentinel response viewer — JSON tree, timing, snapshot comparison, stored locally" onerror="this.style.display='none'" loading="lazy"/></div>
+      <div class="r" style="border-radius:10px;overflow:hidden;border:1px solid var(--border2)"><img src="./screenshots/collections-and-environments.png" alt="API Sentinel collections and environments — local storage, no cloud" onerror="this.style.display='none'" loading="lazy"/></div>
+      <div class="r" style="border-radius:10px;overflow:hidden;border:1px solid var(--border2)"><img src="./screenshots/mock-server.png" alt="API Sentinel mock server — local endpoint simulation" onerror="this.style.display='none'" loading="lazy"/></div>
+    </div>
+  </div>
+</section>
+
+<!-- COMPARE -->
+<section class="sec" id="compare">
+  <div class="wrap z">
+    <p class="lbl r">Comparison</p>
+    <h2 class="r">API Sentinel vs Postman vs Insomnia</h2>
+    <p class="sub r">Full feature and privacy comparison across the three most popular API clients.</p>
+    <div class="cwrap r">
+      <table class="cmp" aria-label="API Sentinel vs Postman vs Insomnia feature comparison">
+        <thead><tr><th>Feature / Attribute</th><th class="s">API Sentinel</th><th>Postman</th><th>Insomnia</th></tr></thead>
+        <tbody>
+        <tr><td>REST API Testing</td><td class="y">✓ Free</td><td class="y">✓ Free</td><td class="y">✓ Free</td></tr>
+        <tr><td>GraphQL Client</td><td class="y">✓ Free</td><td class="y">✓ Free</td><td class="y">✓ Free</td></tr>
+        <tr><td>Collections &amp; Environments</td><td class="y">✓ Free</td><td class="y">✓ Free</td><td class="y">✓ Free</td></tr>
+        <tr><td>Mock Server</td><td class="y">✓ Free</td><td class="p">Paid plan</td><td class="p">Limited</td></tr>
+        <tr><td>Load Testing</td><td class="y">✓ Free</td><td class="p">Paid plan</td><td class="n">✗ No</td></tr>
+        <tr><td>Security Testing</td><td class="y">✓ Free</td><td class="p">Paid plan</td><td class="n">✗ No</td></tr>
+        <tr><td>Collection Runner</td><td class="y">✓ Free</td><td class="p">Limited free</td><td class="p">Limited</td></tr>
+        <tr><td>Scheduled Runs</td><td class="y">✓ Free</td><td class="p">Paid plan</td><td class="n">✗ No</td></tr>
+        <tr><td>Chained Flows</td><td class="y">✓ Free</td><td class="p">Paid plan</td><td class="n">✗ No</td></tr>
+        <tr><td>Snapshot Regression</td><td class="y">✓ Free</td><td class="p">Paid plan</td><td class="n">✗ No</td></tr>
+        <tr><td>WebSocket Client</td><td class="y">✓ Free</td><td class="y">✓ Free</td><td class="p">Limited</td></tr>
+        <tr><td>SSE Client</td><td class="y">✓ Free</td><td class="p">Partial</td><td class="n">✗ No</td></tr>
+        <tr><td>Socket.IO Client</td><td class="y">✓ Free</td><td class="n">✗ No</td><td class="n">✗ No</td></tr>
+        <tr><td>MQTT Client</td><td class="y">✓ Free</td><td class="n">✗ No</td><td class="n">✗ No</td></tr>
+        <tr><td>Proxy Capture</td><td class="y">✓ Free</td><td class="p">Limited</td><td class="n">✗ No</td></tr>
+        <tr><td>AI Assistant</td><td class="y">✓ Free</td><td class="p">Paid plan</td><td class="n">✗ No</td></tr>
+        <tr><td>No Account Required</td><td class="y">✓ Yes</td><td class="n">✗ Required</td><td class="n">✗ Required</td></tr>
+        <tr><td>Local-First Storage</td><td class="y">✓ Yes</td><td class="n">✗ Cloud</td><td class="p">Partial</td></tr>
+        <tr><td>Works Fully Offline</td><td class="y">✓ Yes</td><td class="p">Partial</td><td class="p">Partial</td></tr>
+        <tr><td>No Telemetry by Default</td><td class="y">✓ Yes</td><td class="n">✗ No</td><td class="n">✗ No</td></tr>
+        <tr><td>Price</td><td class="y">Free — always</td><td class="p">Freemium / $12+/mo</td><td class="p">Freemium / $8+/mo</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- DOWNLOAD -->
+<section class="sec" id="download">
+  <div class="wrap z">
+    <div class="dlbox r">
+      <p class="lbl" style="margin-bottom:12px">Download</p>
+      <h2>Get API Sentinel Free</h2>
+      <p style="color:var(--muted);margin-bottom:0">Download for your platform. No account. No credit card. No subscription.<br/>Every feature included. Everything runs on your machine.</p>
+      <div class="dlbtns">
+        <a href="https://github.com/Sanjeevsky/api-sentinel-downloads/releases/latest" class="dlbtn"><span style="font-size:1.15rem">🪟</span> Windows (.exe)</a>
+        <a href="https://github.com/Sanjeevsky/api-sentinel-downloads/releases/latest" class="dlbtn"><span style="font-size:1.15rem"></span> macOS (.dmg)</a>
+        <a href="https://github.com/Sanjeevsky/api-sentinel-downloads/releases/latest" class="dlbtn"><span style="font-size:1.15rem">🐧</span> Linux (.deb)</a>
+      </div>
+      <div class="vn">v0.0.1 · Released May 2026 · <a href="https://github.com/Sanjeevsky/api-sentinel-downloads/blob/main/CHANGELOG.md" style="color:var(--blue)">Changelog</a> · <a href="https://github.com/Sanjeevsky/api-sentinel-downloads/blob/main/docs/GETTING_STARTED.md" style="color:var(--blue)">Getting Started</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="sec" id="faq">
+  <div class="wrap z">
+    <p class="lbl r">FAQ</p>
+    <h2 class="r">Frequently Asked Questions</h2>
+    <div class="flist r">
+      <details class="fi"><summary class="fq">Is API Sentinel completely free — no hidden costs?</summary>
+        <p class="fa">Yes, completely. Every feature — REST testing, GraphQL, mock server, load testing, WebSocket, SSE, MQTT, security scans, collection runner, scheduled runs, chained flows, proxy capture, snapshot regression, AI assistant — is included at no cost. There is no freemium tier, no paid plan, and no feature behind a paywall.</p></details>
+      <details class="fi"><summary class="fq">Does API Sentinel sync my data to the cloud?</summary>
+        <p class="fa">No. API Sentinel is local-first. All your requests, collections, environments, history, snapshots, and vault data are stored on your filesystem only. Nothing is uploaded to any server. Your API credentials, internal endpoints, and request data never leave your machine.</p></details>
+      <details class="fi"><summary class="fq">Do I need an account to use API Sentinel?</summary>
+        <p class="fa">No account is required — now or ever. Download the installer, launch the app, and start making API requests immediately. There is no sign-up screen, no email verification, and no login screen.</p></details>
+      <details class="fi"><summary class="fq">Does it work fully offline?</summary>
+        <p class="fa">Yes. API Sentinel works fully offline. No internet connection is required to use the app itself. The only internet activity is the actual API requests you choose to send.</p></details>
+      <details class="fi"><summary class="fq">What platforms does API Sentinel support?</summary>
+        <p class="fa">API Sentinel runs on Windows (x64), macOS (Intel and Apple Silicon), and Linux (x64, .deb). Download the installer from the <a href="https://github.com/Sanjeevsky/api-sentinel-downloads/releases/latest">GitHub Releases page</a>.</p></details>
+      <details class="fi"><summary class="fq">How does API Sentinel compare to Postman?</summary>
+        <p class="fa">API Sentinel offers mock server, load testing, security testing, scheduled runs, chained flows, SSE, Socket.IO, MQTT, proxy capture, snapshot regression, and AI assistant — all free. Postman locks most of these behind paid plans starting at $12/month and requires a cloud account. API Sentinel stores everything locally and requires no account.</p></details>
+      <details class="fi"><summary class="fq">Does API Sentinel collect telemetry or analytics?</summary>
+        <p class="fa">Telemetry is off by default. API Sentinel does not phone home unless you explicitly enable it. No usage data is collected or transmitted without your knowledge.</p></details>
+      <details class="fi"><summary class="fq">Why does macOS say it can't verify the app?</summary>
+        <p class="fa">Current macOS builds are preview releases and are not yet notarized by Apple. Right-click the app in Finder → Open, then approve it in System Settings → Privacy &amp; Security → Open Anyway. Full notarization is on the roadmap.</p></details>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap z">
+    <div class="ftl">
+      <a href="https://github.com/Sanjeevsky/api-sentinel-downloads/releases/latest">Download</a>
+      <a href="https://github.com/Sanjeevsky/api-sentinel-downloads/blob/main/docs/GETTING_STARTED.md">Getting Started</a>
+      <a href="https://github.com/Sanjeevsky/api-sentinel-downloads/blob/main/docs/FEATURES.md">Features</a>
+      <a href="https://github.com/Sanjeevsky/api-sentinel-downloads/blob/main/CHANGELOG.md">Changelog</a>
+      <a href="https://github.com/Sanjeevsky/api-sentinel-downloads/blob/main/SECURITY.md">Security</a>
+      <a href="https://github.com/Sanjeevsky/api-sentinel-downloads/blob/main/LICENSE">License</a>
+      <a href="https://github.com/Sanjeevsky">GitHub Profile</a>
+    </div>
+    <p>API Sentinel — Free, local-first desktop API client built by <a href="https://github.com/Sanjeevsky" style="color:var(--blue)">Sanjeevsky</a>.</p>
+    <p>REST · GraphQL · Mock Server · Load Testing · WebSocket · SSE · MQTT · Security · Flows · Proxy · No account · No cloud sync · No subscription.</p>
+    <p class="ftkw">postman alternative · free api testing tool · local api client · rest client · http client · graphql client · desktop api client · insomnia alternative · offline api testing · no account api client · websocket client · sse client · mqtt client · socket.io client · mock server · load testing · api security testing · collection runner · chained flows · proxy capture · snapshot regression</p>
+  </div>
+</footer>
+
+<script>
+  // Tab switcher
+  document.getElementById('tnav').addEventListener('click', e => {
+    const btn = e.target.closest('.tb');
+    if (!btn) return;
+    document.querySelectorAll('.tb').forEach(b => b.classList.remove('on'));
+    document.querySelectorAll('.tp').forEach(p => p.classList.remove('on'));
+    btn.classList.add('on');
+    document.getElementById('tp-' + btn.dataset.t).classList.add('on');
+  });
+  // Scroll reveal
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('on'); obs.unobserve(e.target); } });
+  }, { threshold: 0.06 });
+  document.querySelectorAll('.r').forEach(el => obs.observe(el));
+</script>
+</body>
+</html>
